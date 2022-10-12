@@ -4,7 +4,7 @@ import Component1 from "./components/component1";
 
 function App() {
   return (
-    <div className="classFruit">
+    <div>
       <Component1 />
     </div>
   );
