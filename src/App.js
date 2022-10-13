@@ -1,11 +1,19 @@
 import React from "react";
 import "./App.css";
-import Component1 from "./components/component1";
+import NewWord from "./components/NewWord";
+import WordList from "./components/WordList";
+// import NewWord from "./components/NewWord";
+// import WordList from "./components/WordList";
+
 
 function App() {
+
+
+
   return (
     <div>
-      <Component1 />
+      <NewWord />
+      <WordList />
     </div>
   );
 }
