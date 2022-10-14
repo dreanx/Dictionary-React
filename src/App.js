@@ -53,20 +53,20 @@ function App() {
 
   return (
     <div>
-      <div className="container" id="myForm">
-        <input
+      <div className="m-20 text-green-700 " id="myForm">
+        <input className="rounded mr-10 border-2 bg-blue-100 mt-50"
           type="text"
           placeholder="French Word"
           value={french}
           onChange={handleChangeF}
         />
         <input
-          type="text"
+          type="text" className="rounded mr-10 border-2 bg-red-100"
           placeholder="English Word"
           value={english}
           onChange={handleChangeE}
         />
-        <input
+        <input className="rounded border-2 bg-green-100"
           type="text"
           placeholder="Category"
           value={category}
@@ -74,6 +74,7 @@ function App() {
         />
         <div>
           <input
+          className="mt-5"
             type="radio"
             name="M"
             value="M"
@@ -102,14 +103,14 @@ function App() {
           ></input>
           <label for="FM">FM</label>
         </div>
-        <button type="button" id="wordToAdd" onClick={handleAdd}>
+        <button className="mt-5 w-1/12 border-2 hover:bg-purple-300" type="button" id="wordToAdd" onClick={handleAdd}>
           Submit
         </button>
       </div>
 
-      <ul>
+      <ul className="m-20">
         {list.map((word) => (
-          <li key={word.id}>
+          <li className="" key={word.id}>
             {word.french} : {word.english} ({word.category})
           </li>
         ))}
